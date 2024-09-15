@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/MainFormat.css">
+
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="Container">
+        <!-- Navigation -->
+        <div class="Navigation">
+            <img class = "Background" src="images/Background.png">
+            <nav class = "Content">
+                <ul>
+                    <li>Picture Options</li>
+                    <li><a href="javascript:void(0);" onclick="ShowCastle()">Castles</a></li>
+                    <li><a href="javascript:void(0);" onclick="ShowCats()">Cats</a></li>
+                    <li><a href="javascript:void(0);" onclick="ShowDogs()">Dogs</a></li>
+                    <li><a href="javascript:void(0);" onclick="ShowNature()">Nature</a></li>
+                    <li><a href="javascript:void(0);" onclick="ShowRandom()">Random</a></li>
+                    <li><footer>All images from unsplash</footer></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main Information -->
+        <section class="MainContent"> 
+
+            <img class = "Background" src="images/Background.png">
+            <!-- header -->
+            <header class="Content">
+                <h1>Castle Gallery</h1>
+                <p>Scroll left/right for images</p>
+                <ul id = 'Gallery-ul'>
+                    <li>No. of images</li>
+                    <li><a class="length" href="javascript:void(0)" onclick="setLengthConstant()">1</a></li>
+                    <li><a class="length" href="javascript:void(0)" onclick="setLengthConstant()">3</a></li>
+                    <li><a class="length" href="javascript:void(0)" onclick="setLengthConstant()">5</a></li>
+                </ul>
+            </header>
+            <!-- Scrolling Cards -->
+            <div id = "xCards">
+                <article class="Content">
+                    <img src="images/Gallery/castle1.jpg" alt="Castle image">
+                </article>    
+                <article class="Content">
+                    <img src="images/Gallery/castle2.jpg" alt="Castle image">
+                </article>
+                <article class="Content">
+                    <img src="images/Gallery/castle3.jpg" alt="Castle image">
+                </article>
+                <article class="Content">
+                    <img src="images/Gallery/castle4.jpg" alt="Castle image">
+                </article>
+                <article class="Content">
+                    <img src="images/Gallery/castle5.jpg" alt="Castle image">
+                </article>
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>
